@@ -1,0 +1,231 @@
+/*
+    Name:Nathan Bui
+    Date created: 09/15/2024
+    Dated Modified: 09/15/2024
+    Purpose:Homework 1 
+*/
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color:aqua; 
+    transition: background-color 0.4 ease-in-out;
+    z-index: 1000;
+}
+
+header.scrolled{
+    background-color: aqua;
+    opacity: 1.0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(40, 205, 122);
+    margin: 0;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100vh;
+}
+
+form {
+    flex-grow: 1;
+}
+
+h1, h2 {
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    flex-grow:1;
+}
+
+main {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    flex-grow:1;
+}
+
+.image {
+    text-align: left;
+}
+
+.td1 {
+    text-align:right;
+    font-family: 'optima', sans-serif;
+    font-weight: normal;
+}
+
+th { 
+    text-align:right;
+    font-family: 'optima', sans-serif;
+}
+
+footer { 
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(66, 107, 91);
+    height: 3.0 rem;
+}
+
+#footer {
+    text-align:right;
+    font-family: 'optima', sans-serif;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label {
+    text-align: left;
+    font-family: 'optima', sans-serif;
+    font-weight: normal;
+}
+
+input {
+    text-align: left;
+    font-family: 'optima', sans-serif;
+    font-weight: normal;
+}
+
+textarea { 
+    text-align: left;
+    font-family: 'optima', sans-serif;
+    font-weight: normal;
+}
+
+#today {   
+    text-align: left;
+    font-family: 'optima', sans-serif;
+    font-weight: normal;
+    margin-left: 10px; 
+}
+
+p {
+    text-align: center;
+    font-family: 'optima', sans-serif;
+    font-weight: normal;
+}
+
+.error {
+    color: red;
+    font: size 12px;
+    font-family:'optima', sans-serif;
+    font-weight: normal;
+}
+
+.pword-message {
+    text-align: right;
+    font-family:'optima', sans-serif;
+    font-weight: normal;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+table.output,
+tr.output,
+td.output {
+    width: 500px;
+    background-color:darkslategray;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color:black;
+}
+
+td.output {
+    width: 500px;
+    background-color: rgb(140, 194, 194);
+    padding: 10px;
+    border-spacing: 2px;
+}
+
+#alert-box {
+    display: none;
+    position:fixed;
+    z-index: 9999;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    overflow:auto;
+    background-color: transparent;
+}
+
+#alert-content{
+    background-color: aqua;
+    border-radius: 10px;
+    width:300px;
+    height:130px;
+    margin:auto;
+    margin-top:20%;
+    padding:30px;
+    text-align:center;
+}
+
+#alert-content h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family:"optima", sans-serif;
+    font-weight: normal;
+}
+
+#close-alert {
+    background-color: beige;
+    border-width: 1px;
+    border-style: solid;
+    color:blue;
+    border-color:blanchedalmond;
+    font-size:15px;
+    font-weight:bold;
+    height:20px;
+    width:80px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top:20px;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.iframe-container {
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.iframe-container iframe{
+    width: 95%;
+    height:20%;
+    border: 1px solid black;
+}
+
+#welcome1{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+#welcome2{
+     margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
